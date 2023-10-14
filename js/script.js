@@ -17,10 +17,9 @@ document.addEventListener("DOMContentLoaded", function () {
         for (let j = 0; j < 21; j++) {
             let celda = fila.insertCell(j);
             celda.className = "cuadro";
-            celda.setAttribute("data-original-color", "#fff"); // Almacena el color original
+            celda.setAttribute("data-original-color", "#fff");
 
             celda.addEventListener('mouseover', event => {
-                // Cambia al color aleatorio
                 event.target.style.transition = "background-color 0.1s";
                 event.target.style.backgroundColor = randomColor();
 
